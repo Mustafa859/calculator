@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    switch-background: #303136;
+    switch-color: #29A8FF;
+    operations-color: #B2DAFF;
+    clear-background-color: #A5A5A5;
+    background-color: #17181A;
+}
+
+
+.display{
+
+    margin-top: 100px;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    color: white;
+    
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    row-gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.buttons button{
+    background-color: #303136;
+    color: #29A8FF;
+    border-radius: 30px;
+    font-size: 2rem;
+    border: none;
+    height: 80px;
+}
+ 
+#addition{
+    color: white;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: auto;
+    grid-column-start: 4;
+}
+#operators, #addition{
+    background-color: #B2DAFF;
+    color: #000;
+}
+#zero{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#clear{
+    background-color: #A5A5A5;
+    color: #B2DAFF;
+    grid-column-start: 4;
+}
+#equal{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    background-color: #B2DAFF;
+    color: #000;
+}
+#division{
+    grid-column-start: 3;
+    background-color: #B2DAFF;
+    color: #000;
+}
+
+
+
+
